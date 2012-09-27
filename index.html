@@ -3,9 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Алтера</title>
-	<link rel="stylesheet" media="screen" href="css/master.css" >
-	<script src="js/jquery-1.8.0.min.js"></script>
-	<script src="js/common.js"></script>
+	<link rel="stylesheet" media="screen" href="css/base.css" >
 	<!--[if lt IE 9]> <script src="js/html5.js"></script> <![endif]-->
 </head>
 <body>
@@ -29,17 +27,17 @@
 			</ul>
 			<div class="contact-form">
 				<a href="#" class="contact-form__link">Перезвоните мне пожалуйста</a>
-				<div class="contact-form__popup">
+				<div class="contact-form__popup contact-form__popup-open">
 					<form action="#">
 						<div class="row">
 							<label for="id-001">ФИО</label>
-							<input type="text" id="id-001">
+							<input type="text" id="id-001" class="input">
 						</div>
 						<div class="row">
 							<label for="id-002">Телефон</label>
-							<input type="text" id="id-001">
+							<input type="text" id="id-001" class="input">
 						</div>
-						<input type="submit" value="Выслать заявку" class="btn">
+						<input type="submit" value="Выслать заявку" class="btn flr">
 					</form>
 				</div>
 			</div>
@@ -68,6 +66,7 @@
 	<!-- BEGIN .main -->
 	<div class="main">
 		<div class="l">
+			<!-- BEGIN .sidebar -->
 			<aside class="sidebar">
 				<div class="traffic-menu">
 					<ul>
@@ -92,14 +91,35 @@
 					<a href="#">Запрос на перевозку</a>
 				</div>
 			</aside>
+			<!-- END .sidebar -->
+
+
+			<!-- BEGIN .content -->
 			<div class="content">
+				<!-- BEGIN .content-block -->
 				<div class="content-block">
 					<div class="content-title">
+						<a href="#" class="content-title__link flr">Архив событий</a>
 						<h1>Новости компании</h1>
 					</div>
-
+					<!-- BEGIN .category -->
+					<div class="category">
+						<div class="category__list">
+							<div class="category__item">
+								<h3><a href="#">Авиа перевозки в Россию</a></h3>
+								<p>Рады сообщить, что наша компания начинает использовать для грузоперевозок авиа транспорт</p>
+							</div>
+							<div class="category__item">
+								<h3><a href="#">Грузоперевозки. Цена.</a></h3>
+								<p>Человек, впервые обратившись на рынок грузоперевозок, очень часто рискует ошибиться в выборе грузоперевозчика</p>
+							</div>
+						</div>
+					</div>
+					<!-- END .category -->
 				</div>
+
 				<div class="content-block">
+					<a href="#" class="more-info flr">Получить больше информации</a>
 					<h1>ООО Алтера Шиппинг Компани</h1>
 					<p>Бизнес – это, в первую очередь, движение, и перед руководителем каждой компании стоит задача правильной организовать такое движение: идёт ли речь о внутренних бизнес-процессах или же о необходимых внешних перемещениях товаров, оборудования, материалов.</p>
 					<p>Междугородные и международные перевозки грузов подразумевают решение целого ряда вопросов:</p>
@@ -115,8 +135,79 @@
 					</ul>
 
 				</div>
+				<!-- END .content-block -->
+			</div>
+			<!-- END .content -->
+
+
+		</div>
+
+		<div class="notice">
+			<h1>А кому Вы доверяете решение этих задач?</h1>
+			<p>Наша компания на протяжении последних 9 лет оказывает профессиональные транспортно-логистические услуги. За это время мы успешно переместили из пункта А в пункт Б множество самых различных видов грузов по России, а также импортировали и экспортировали в целости и сохранности в/из стран СНГ, Европы, Азии, Америки и Австралии сырьё, материалы, технику, представителей фауны и готовую продукцию.</p>
+		</div>
+
+		<div class="services">
+			<div class="services__col">
+				<div class="services__item">
+					<div class="services__img">
+						<img src="img/icon-01.jpg" class="services__img1" alt="">
+					</div>
+					<div class="services__inf">
+						<h3><a href="#">Фрахтование морских и речных судов </a></h3>
+						<p>Контейнерные перевозки — это современный, наиболее экономичный вид транспортировки грузов, используемый как во внутреннем, так и в международном сообщениях. Контейнерные перевозки выполняются различными видами сухопутного (железнодорожного и автомобильного), водного и воздушного транспорта при помощи съёмных транспортных приспособлений - контейнеров.</p>
+					</div>
+				</div>
+				<div class="services__item">
+					<div class="services__img">
+						<img src="img/icon-02.png" class="services__img2" alt="">
+					</div>
+					<div class="services__inf">
+						<h3><a href="#">Перевозки тяжеловесных, негабаритных грузов и спецтехники</a></h3>
+						<p>Основной ассортимент перевозимой продукции — тропические масла из района Малайзии, портов Европы на Санкт-Петербург с последующей доставкой до потребителя железнодорожным транспортом и таможенной очисткой. </p>
+					</div>
+				</div>
+				<div class="services__item">
+					<div class="services__img">
+						<img src="img/icon-03.png" class="services__img3" alt="">
+					</div>
+					<div class="services__inf">
+						<h3><a href="#">Автоперевозки по Европе, СНГ и России</a></h3>
+						<p>Основной ассортимент перевозимой продукции — тропические масла из района Малайзии, портов Европы на Санкт-Петербург с последующей доставкой до потребителя железнодорожным транспортом и таможенной очисткой. </p>
+					</div>
+				</div>
+			</div>
+			<div class="services__col">
+				<div class="services__item">
+					<div class="services__img">
+						<img src="img/icon-04.png" class="services__img4" alt="">
+					</div>
+					<div class="services__inf">
+						<h3><a href="#">Мультимодальные перевозки</a></h3>
+						<p>Мы предлагаем качественный круглосуточный сервис по агентированию судов всех типов, заходящих в порт Санкт-Петербург. Большой опыт работы наших сотрудников позволяет организовывать обработку судов с максимальной эффективностью.</p>
+					</div>
+				</div>
+				<div class="services__item">
+					<div class="services__img">
+						<img src="img/icon-05.png" class="services__img5" alt="">
+					</div>
+					<div class="services__inf">
+						<h3><a href="#">Контейнерные перевозки</a></h3>
+						<p>Действуя в качестве экспедитора, компания имеет договорные отношения с ОАО «Морской порт Санкт-Петербург», ОАО «Петролеспорт», ООО «Морской Рыбный Порт» и другими портовыми структурами, что позволяет предоставлять нашим клиентам полный комплекс услуг по обработке и прохождению всего диапазона грузовой номенклатуры от ISO-контейнеров до крупных партий навалочных и наливных грузов) через Морской Порт и регион. </p>
+					</div>
+				</div>
+				<div class="services__item">
+					<div class="services__img">
+						<img src="img/icon-06.jpg" class="services__img6" alt="">
+					</div>
+					<div class="services__inf">
+						<h3><a href="#">Таможенное оформление</a></h3>
+						<p>Основной ассортимент перевозимой продукции — тропические масла из района Малайзии, портов Европы на Санкт-Петербург с последующей доставкой до потребителя железнодорожным транспортом и таможенной очисткой. </p>
+					</div>
+				</div>
 			</div>
 		</div>
+
 	</div>
 	<!-- END .main -->
 </div>
